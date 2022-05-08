@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  width: 85%;
+}
+
+.main-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin-top: 40px;
+  color: #00494d;
+}
+
+.calc-section {
+  background-color: white;
+  height: 100vh;
+  margin-top: 32px;
+  border-radius: 20px;
+}
+.calc-section .bill {
+  padding-top: 32px;
+}
+.calc-section .bill > h4 {
+  color: #5e7a7d;
+}
+.calc-section .bill .calc form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.calc-section .bill .calc form i {
+  position: absolute;
+  left: 23px;
+  top: 22px;
+  font-size: 15px;
+  color: #5e7a7d;
+}
+.calc-section .bill .calc form .input-field {
+  margin-top: 6px;
+  width: 98%;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f4fafa;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00494d;
+}
+.calc-section .bill .calc form .input-field:focus {
+  outline-color: #00494d;
+}
+.calc-section .select-tip {
+  margin-top: 40px;
+}
+.calc-section .select-tip > h4 {
+  color: #5e7a7d;
+}
+.calc-section .select-tip .perc {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 14px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 14px;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+  margin-top: 10px;
+}
+.calc-section .select-tip .perc .perc-box {
+  background-color: #00494d;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.calc-section .select-tip .perc .perc-box:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+.calc-section .select-tip .perc .custom {
+  background-color: #f4fafa;
+  color: #00494d;
+  outline-color: #00494d;
+}
+.calc-section .select-tip .perc .active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+.calc-section .num-of-ppl {
+  margin-top: 40px;
+}
+.calc-section .num-of-ppl > h4 {
+  color: #5e7a7d;
+}
+.calc-section .num-of-ppl .num-ppl-input form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.calc-section .num-of-ppl .num-ppl-input form i {
+  position: absolute;
+  left: 23px;
+  top: 22px;
+  font-size: 15px;
+  color: #5e7a7d;
+}
+.calc-section .num-of-ppl .num-ppl-input form .input-field {
+  margin-top: 6px;
+  width: 98%;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f4fafa;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00494d;
+}
+.calc-section .num-of-ppl .num-ppl-input form .input-field:focus {
+  outline-color: #00494d;
+}
+.calc-section .sum-box {
+  margin-top: 40px;
+  background-color: #00494d;
+  color: white;
+  border-radius: 1rem;
+}
+.calc-section .sum-box .sum {
+  padding: 2rem 1rem;
+}
+.calc-section .sum-box .sum .tip-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calc-section .sum-box .sum .tip-amount .text > p {
+  color: #7f9c9f;
+  font-size: 14px;
+  font-weight: 700;
+}
+.calc-section .sum-box .sum .tip-amount .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  color: #26c0ab;
+  font-weight: 700;
+}
+.calc-section .sum-box .sum .total {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calc-section .sum-box .sum .total .text > p {
+  color: #7f9c9f;
+  font-size: 14px;
+  font-weight: 700;
+}
+.calc-section .sum-box .sum .total .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  color: #26c0ab;
+  font-weight: 700;
+}
+.calc-section .sum-box .sum .reset-btn {
+  margin-top: 40px;
+  background-color: #26c0ab;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 0;
+}
+.calc-section .sum-box .sum .reset-btn a {
+  display: block;
+  color: #00494d;
+}
+.calc-section .sum-box .sum .reset-btn:hover {
+  background-color: #9fe8df;
+}
+
+@media (min-width: 680px) {
+  .calc-section {
+    width: 60%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .calc-section .bill {
+    width: 50%;
+  }
+  .calc-section .select-tip {
+    width: 50%;
+  }
+  .calc-section .select-tip .perc {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .calc-section .select-tip .perc .perc-box {
+    padding: 5px 16px;
+  }
+  .calc-section .num-of-ppl {
+    width: 50%;
+  }
+  .calc-section .sum-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 32px 32px;
+    width: 42%;
+    height: 87%;
+  }
+  .calc-section .sum-box .sum .reset-btn {
+    margin-top: 190px;
+  }
+}
+@media (min-width: 1441px) {
+  .calc-section {
+    width: 45%;
+  }
+}

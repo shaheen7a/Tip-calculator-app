@@ -1,0 +1,54 @@
+@media (min-width : 680px) {
+  .calc-section {
+    width: 60%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    .bill {
+      width: 50%;
+    }
+
+
+
+    .select-tip {
+      width: 50%;
+      .perc {
+        grid-template-columns: repeat(3, 1fr);
+        .perc-box {
+          padding: 5px 16px;
+        }
+      }
+    }
+
+    .num-of-ppl {
+      width: 50%;
+    }
+
+
+
+    .sum-box {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 32px 32px;
+      width: 42%;
+      height: 87%;
+
+      .sum {
+        .reset-btn {
+          margin-top: 190px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width : 1441px) {
+  .calc-section {
+    width: 45%;
+  }
+}

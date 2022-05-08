@@ -1,0 +1,207 @@
+.calc-section {
+  background-color: $white;
+  height: 100vh;
+  margin-top: 32px;
+  border-radius: 20px;
+
+  .bill {
+    padding-top: 32px;
+
+    >h4 {
+      color: $darkGrayishCyan;
+    }
+
+    .calc {
+      form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          position: absolute;
+          left: 23px;
+          top: 22px;
+          font-size: 15px;
+          color: $darkGrayishCyan;
+
+        }
+
+        .input-field {
+
+          margin-top: 6px;
+          width: 98%;
+          height: 42px;
+          border: none;
+          border-radius: 10px;
+          background-color: $veryLightGrayishCyan;
+          font-size: 24px;
+          font-weight: 700;
+          color: $veryDarkCyan ;
+
+          &:focus {
+            outline-color: $veryDarkCyan;
+          }
+        }
+      }
+    }
+  }
+
+  .select-tip {
+    margin-top: 40px;
+
+    >h4 {
+      color: $darkGrayishCyan;
+    }
+
+    .perc {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 14px;
+      column-gap: 14px;
+      margin-top: 10px;
+
+      .perc-box {
+        background-color: $veryDarkCyan;
+        color: $white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 5px 24px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color:$strongCyan ;
+          color:$veryDarkCyan ;
+        }
+      }
+      .custom {
+        background-color: $veryLightGrayishCyan;
+        color: $veryDarkCyan;
+        outline-color: $veryDarkCyan;
+      }
+      .active {
+        background-color: $strongCyan;
+        color: $veryDarkCyan;
+      }
+    }
+  }
+
+  .num-of-ppl {
+    margin-top: 40px;
+
+    >h4 {
+      color: $darkGrayishCyan;
+    }
+
+    .num-ppl-input {
+
+      form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          position: absolute;
+          left: 23px;
+          top: 22px;
+          font-size: 15px;
+          color: $darkGrayishCyan;
+
+        }
+
+        .input-field {
+
+          margin-top: 6px;
+          width: 98%;
+          height: 42px;
+          border: none;
+          border-radius: 10px;
+          background-color: $veryLightGrayishCyan;
+          font-size: 24px;
+          font-weight: 700;
+          color: $veryDarkCyan ;
+
+          &:focus {
+            outline-color: $veryDarkCyan;
+          }
+        }
+      }
+    }
+  }
+
+  .sum-box {
+    margin-top: 40px;
+    background-color: $veryDarkCyan;
+    color: $white;
+    border-radius: 1rem;
+
+    .sum {
+      padding: 2rem 1rem;
+
+      .tip-amount {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .text {
+          >p {
+            color: $grayishCyan;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+
+        .cost {
+          display: flex;
+          font-size: 2rem;
+          color: $strongCyan;
+          font-weight: 700;
+        }
+
+      }
+
+      .total {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .text {
+          >p {
+            color: $grayishCyan;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+
+        .cost {
+          display: flex;
+          font-size: 2rem;
+          color: $strongCyan;
+          font-weight: 700;
+        }
+      }
+
+      .reset-btn {
+        margin-top: 40px;
+        background-color: $strongCyan;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 4px;
+        padding: 8px 0;
+        a {
+          display: block;
+          color:$veryDarkCyan ;
+        }
+        &:hover {
+          background-color:#9fe8df ;
+        }
+      }
+    }
+  }
+}

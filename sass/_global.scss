@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: $lightGrayishCyan;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  width: 85%;
+}

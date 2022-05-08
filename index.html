@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>Tip calculator app</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="main-head">
+          <span>SPLI</span>
+          <span>TTER</span>
+        </div>
+      </div>
+    </header>
+    <section role='main' class="calc-section">
+      <div class="container">
+        <div class="bill">
+          <h4>Bill</h4>
+          <div class="calc">
+            <form action="">
+              <i class="fa-solid fa-dollar-sign icon"></i>
+              <input class="input-field bill-field" id="bill-amount" type="text" dir="rtl" value=142.55 />
+            </form>
+          </div>
+        </div>
+
+        <div role='form' class="select-tip">
+          <h4>Select Tip %</h4>
+          <div class="perc">
+            <div id="5" name="tip" class="perc-box">5%</div>
+            <div id="10" name="tip" class="perc-box">10%</div>
+            <div id="15" name="tip" class="perc-box active">15%</div>
+            <div id="25" name="tip" class="perc-box">25%</div>
+            <div id="50" name="tip" class="perc-box">50%</div>
+            <div id="tip-custom" name="tip" class="perc-box custom" contentEditable="true">Custom</div>
+          </div>
+        </div>
+
+        <div role='form' class="num-of-ppl">
+          <h4>Number Of People</h4>
+          <div class="num-ppl-input">
+            <form action="">
+              <i class="fa-solid fa-user"></i>
+              <input class="input-field" id="numpeople" type="text" dir="rtl" value=5 />
+            </form>
+        </div>
+
+        <div role='form' class="sum-box">
+          <div class="sum">
+            <div class="tip-amount">
+              <div class="text">
+                <h4>Tip Amount</h4>
+                <p>/ person</p>
+              </div>
+  
+              <div class="cost">
+                <span>$</span><p>4.27</p>
+              </div>
+            </div>
+  
+            <div class="total">
+              <div class="text">
+                <h4>Total</h4>
+                <p>/ person</p>
+              </div>
+  
+              <div class="cost">
+                <span>$</span><p>32.79</p>
+              </div>
+            </div>
+  
+            <div role="application" class="reset-btn">
+              <a href="#">Reset</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+    Reset -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Aous Shaheen</a>.
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
