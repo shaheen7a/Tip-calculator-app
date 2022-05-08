@@ -57,7 +57,7 @@
         <div class="bill">
           <h4>Bill</h4>
           <div class="calc">
-            <form action="">
+            <form>
               <i class="fa-solid fa-dollar-sign icon"></i>
               <input class="input-field bill-field" id="bill-amount" type="text" dir="rtl" value=142.55 />
             </form>
@@ -67,25 +67,25 @@
         <div role='form' class="select-tip">
           <h4>Select Tip %</h4>
           <div class="perc">
-            <div id="5" name="tip" class="perc-box">5%</div>
-            <div id="10" name="tip" class="perc-box">10%</div>
-            <div id="15" name="tip" class="perc-box active">15%</div>
-            <div id="25" name="tip" class="perc-box">25%</div>
-            <div id="50" name="tip" class="perc-box">50%</div>
-            <div id="tip-custom" name="tip" class="perc-box custom" contentEditable="true">Custom</div>
+            <div id="5" class="perc-box">5%</div>
+            <div id="10"  class="perc-box">10%</div>
+            <div id="15" class="perc-box active">15%</div>
+            <div id="25" class="perc-box">25%</div>
+            <div id="50"  class="perc-box">50%</div>
+            <div id="tip-custom" class="perc-box custom" contentEditable="true">Custom</div>
           </div>
         </div>
 
         <div role='form' class="num-of-ppl">
           <h4>Number Of People</h4>
           <div class="num-ppl-input">
-            <form action="">
+            <form>
               <i class="fa-solid fa-user"></i>
               <input class="input-field" id="numpeople" type="text" dir="rtl" value=5 />
             </form>
         </div>
 
-        <div role='form' class="sum-box">
+        <div role="tab" class="sum-box">
           <div class="sum">
             <div class="tip-amount">
               <div class="text">
@@ -120,7 +120,7 @@
     <!-- 
     Reset -->
 
-    <div class="attribution">
+    <div role="text" class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
